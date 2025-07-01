@@ -321,9 +321,9 @@ DataApp.prototype.renderAllDataTables = function() {
 DataApp.prototype.renderDataTable = function(data, headers, dataset) {
     const searchTermToUse = this.searchTerm;
     // Detect if this is the data3 (Links) dataset and has a Link column
-    const isLinksDataset = dataset === 'data3' && headers.includes('Link');
+    const isLinksDataset = dataset === 'data3Links' && headers.includes('Link');
     // Detect if this is the data2 (Images) dataset and has an Image column
-    const isImagesDataset = dataset === 'data2' && headers.includes('Image');
+    const isImagesDataset = dataset === 'data2Images' && headers.includes('Image');
     if (isImagesDataset) {
         // Render as image cards
         return `<div class="image-card-grid">
