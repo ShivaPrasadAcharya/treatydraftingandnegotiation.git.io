@@ -20,7 +20,7 @@ var data1Trainees = `Name,Designation,Office,Email,Phone No.
 18. श्री लोकहरी कडेल (Shri Lokhari Kandel),उपसचिव,"कानून, न्याय तथा संसदीय मामिला मन्त्रालय",kandellhari@gmail.com,9841299063
 19. श्री मिलन भट्टराई (Shri Milan Bhattarai),उपसचिव,"महिला, बालबालिका तथा ज्येष्ठ नागरिक मन्त्रालय",m.bhattarai012@gmail.com,9851009287
 20. श्री निरा गिरी (Shri Nira Giri),शाखा अधिकृत,"कानून, न्याय तथा संसदीय मामिला मन्त्रालय",neeragiri2016@gmail.com,9808091767
-21. श्री निर्मला थापा (Shri Nirmala Thapa),,"सञ्चार तथा सूचना प्रविधि मन्त्रालय",nirvikthapa4@gmail.com,9849164623
+21. श्री निर्मला थापा (Shri Nirmala Thapa),उपसचिव,"सञ्चार तथा सूचना प्रविधि मन्त्रालय",nirvikthapa4@gmail.com,9849164623
 22. श्री प्रभात क्षेत्री (Shri Prabhat Chhetri),उपन्यायाधिवक्ता,"महान्यायाधिवक्ताको कार्यालय",prabhatchhetri7@gmail.com,9860453191
 23. श्री प्रकाश न्यौपाने (Shri Prakash Neupane),उपसचिव,"कानून, न्याय तथा संसदीय मामिला मन्त्रालय",prakashachhami@gmail.com,9849155012
 24. श्री रमेश प्रसाद पौडेल (Shri Ramesh Prasad Poudel),सि.डि.ई.,"भौतिक पूर्वाधार तथा यातायात मन्त्रालय",rameshppoudel@gmail.com,9841822260
