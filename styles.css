@@ -227,12 +227,6 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.table-container {
-    overflow-x: auto;
-    max-height: 500px;
-    overflow-y: auto;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -1007,4 +1001,44 @@ th.highlight-column {
   color: #555;
   font-size: 0.97em;
   text-align: center;
+}
+
+/* Zebra striping for dataset tables */
+.data-table table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.data-table table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.data-table table th {
+    background-color: #4a69bd;
+    color: #fff;
+}
+.data-table table td, .data-table table th {
+    border: 1px solid #333;
+    padding: 6px 10px;
+}
+.data-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Zebra striping for HTML tables generated from DOCX */
+.mammoth-html-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.mammoth-html-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.mammoth-html-table th {
+    background-color: #4a69bd;
+    color: #fff;
+}
+.mammoth-html-table td, .mammoth-html-table th {
+    border: 1px solid #333;
+    padding: 6px 10px;
+}
+.mammoth-html-table {
+    border-collapse: collapse;
+    width: 100%;
 }
