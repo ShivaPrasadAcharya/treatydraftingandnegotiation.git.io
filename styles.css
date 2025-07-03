@@ -1042,3 +1042,48 @@ th.highlight-column {
     border-collapse: collapse;
     width: 100%;
 }
+
+/* Image Modal Styles */
+.image-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90vw;
+  max-height: 85vh;
+  box-shadow: 0 0 24px #000a;
+  border-radius: 10px;
+}
+
+.image-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+  text-shadow: 0 2px 8px #000a;
+}
+
+.image-modal-caption {
+  margin: 16px auto 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  max-width: 90vw;
+  word-break: break-word;
+}

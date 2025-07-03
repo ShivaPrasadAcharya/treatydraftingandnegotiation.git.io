@@ -43,7 +43,7 @@ DataApp.prototype.getHTML = function() {
                     </div>
                     
                     <div style="display: flex; align-items: center; flex: 1; gap: 10px;">
-                        <input type="text" class="search-input" placeholder="🔍 Global search across datasets..." value="${this.searchTerm}">
+                        <input type="text" class="search-input" placeholder="🔍  Global search across datasets..." value="${this.searchTerm}">
                         ${this.searchTerm && searchPosition.total > 0 ? `
                             <div class="search-navigation">
                                 <button class="search-nav-btn" onclick="window.searchEngine.navigateToMatch('prev')" ${searchPosition.total <= 1 ? 'disabled' : ''}>
@@ -325,11 +325,11 @@ DataApp.prototype.renderDataTable = function(data, headers, dataset) {
     // Detect if this is the data2 (Images) dataset and has an Image column
     const isImagesDataset = dataset === 'data2Images' && headers.includes('Image');
     if (isImagesDataset) {
-        // Render as image cards
+        // Render as image cards with expandable functionality (no modal here)
         return `<div class="image-card-grid">
             ${data.map(row => `
                 <div class="image-card">
-                    <img src="${row['Image']}" alt="${row['Title'] || ''}" class="image-card-img" />
+                    <img src="${row['Image']}" alt="${row['Title'] || ''}" class="image-card-img expandable-img" data-fullsrc="${row['Image']}" />
                     <div class="image-card-title">${row['Title'] || ''}</div>
                     <div class="image-card-desc">${row['Description'] || ''}</div>
                 </div>
@@ -381,4 +381,20 @@ DataApp.prototype.renderNoResults = function(dataset) {
             </div>
         </div>
     `;
+};
+
+// Add/replace attachEventListeners to support image expand
+DataApp.prototype.attachEventListeners = function() {
+    // Expandable images using Fullscreen API
+    document.querySelectorAll('.expandable-img').forEach(img => {
+        img.addEventListener('click', function() {
+            if (this.requestFullscreen) {
+                this.requestFullscreen();
+            } else if (this.webkitRequestFullscreen) { /* Safari */
+                this.webkitRequestFullscreen();
+            } else if (this.msRequestFullscreen) { /* IE11 */
+                this.msRequestFullscreen();
+            }
+        });
+    });
 };
