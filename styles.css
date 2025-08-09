@@ -287,6 +287,32 @@ tr:hover {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
+/* Collapsed ribbons for table expansion */
+.collapsed-ribbon {
+    display: none !important;
+}
+
+.toggle-ribbons-btn {
+    padding: 8px 18px;
+    background: linear-gradient(45deg, #6f42c1, #e83e8c);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(111, 66, 193, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.toggle-ribbons-btn:hover {
+    background: linear-gradient(45deg, #5a32a3, #d91a72);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(111, 66, 193, 0.25);
+}
+
 .close {
     color: #aaa;
     float: right;
