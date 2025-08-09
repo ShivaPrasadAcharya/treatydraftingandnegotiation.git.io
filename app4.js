@@ -91,13 +91,13 @@ DataApp.prototype.handleClick = function(e) {
 
 DataApp.prototype.handleInput = function(e) {
     if (e.target.classList.contains('search-input')) {
-        this.searchTerm = e.target.value;
-
+        const inputValue = e.target.value;
         const input = e.target;
         const selectionStart = input.selectionStart;
         const selectionEnd = input.selectionEnd;
 
         this.debounce(() => {
+            this.searchTerm = inputValue;
             if (this.showMultipleDatasets) {
                 this.applyFiltersToAllDatasets();
             } else {

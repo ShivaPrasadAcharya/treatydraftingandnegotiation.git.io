@@ -43,7 +43,7 @@ DataApp.prototype.getHTML = function() {
                     </div>
                     
                     <div style="display: flex; align-items: center; flex: 1; gap: 10px;">
-                        <input type="text" class="search-input" placeholder="🔍  Global search across datasets..." value="${this.searchTerm}">
+                        <input type="text" class="search-input" placeholder="🔍  Enter character slowly..." value="${this.searchTerm}">
                         ${this.searchTerm && searchPosition.total > 0 ? `
                             <div class="search-navigation">
                                 <button class="search-nav-btn" onclick="window.searchEngine.navigateToMatch('prev')" ${searchPosition.total <= 1 ? 'disabled' : ''}>
